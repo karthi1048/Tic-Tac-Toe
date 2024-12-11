@@ -5,6 +5,7 @@ let msgContainer = document.querySelector('.msg-container');
 let msg = document.querySelector('#msg');
 
 let turnO = true; // player X or player O
+let count = 0;
 
 // Using 2D array to store winning patterns, but strings could be used also
 const winPat = [
@@ -26,10 +27,15 @@ const enableBoxes = () => {
 
 const resetGame = () => {
     turnO = true;
+    count = 0;
     enableBoxes();
     msgContainer.classList.add('hide');
 }
 
+const draw = () => {
+    msg.innerText = 'Game is Draw';
+    msgContainer.classList.remove('hide');
+}
 
 // to modify the msg after checking for winner
 const showWinner = (winnerVal) => {
@@ -71,12 +77,20 @@ const checkWin = () => {
 boxes.forEach((box) => {
     box.addEventListener('click', () => {
         // console.log('box clicked');
+
+        count++;      // to count box usage
         if(turnO) { 
             box.innerText = 'O';
+            box.style.color = 'red';
             turnO = false;   // leads to turn of X
         } else {
             box.innerText = 'X';
+            box.style.color = 'green';
             turnO = true;
+        }
+        // for checking draw
+        if(count === 9){
+            draw();
         }
     box.disabled = true;  // disabling box(button) ensures there is no rewriting
 

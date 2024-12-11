@@ -35,8 +35,7 @@ body {
     border: none;
     box-shadow: 0 0 1rem rgba(0,0,0,0.3);
     font-size: 8vmin;
-    color: #b0413e;
-    /* background-color: #fff; */
+    background-color: #fff;   /* comment this line to understand hide class usage */
 }
 
 .game-btn {
