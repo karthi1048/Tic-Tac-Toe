@@ -35,7 +35,10 @@ The game checks the following patterns to declare a winner:
 - Vertical: Columns 1, 2, or 3.  
 - Diagonal: Top-left to bottom-right, or top-right to bottom-left.  
 
-## Screenshots  
+## Screenshots
+<img src="xo-1.png" alt="Game layout reference 1">
+<img src="xo-2.png" alt="Game layout reference 2">
+<img src="xo-3.png" alt="Game layout reference 3">
 
 ## Contribution  
 Contributions are welcome!  
