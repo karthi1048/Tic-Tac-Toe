@@ -17,7 +17,7 @@ A simple web-based **Tic Tac Toe** game that allows two players to compete on a 
 ## Installation and Setup  
 1. Clone the repository or download the ZIP file.  
    ```bash
-   git clone https://github.com/karthi1048/tic-tac-toe.git
+   git clone https://github.com/karthi1048/Tic-Tac-Toe.git
 2. Navigate to the project directory.  
    ```bash
    cd tic-tac-toe
